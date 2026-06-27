@@ -85,7 +85,7 @@ GeoBIM Mentor предназначен для консультаций по ин
 ## Файлы и архивы данных
 
 | Файл | Назначение |
-|---|---|---|
+|---|---|
 | `GeoBIM_Mentor_v0_1_RU.ipynb` | Основной русский notebook проекта |
 | `GeoBIM_Mentor_v0_1_EN.ipynb` | Английская версия notebook | 
 | `geobim_artifact_loader_v0_1.py` | Автономный загрузчик готового Chroma-индекса | 
@@ -417,7 +417,7 @@ The architecture consists of several layers:
 ## Files and data archives
 
 | File | Purpose |
-|---|---|---|
+|---|---|
 | `GeoBIM_Mentor_v0_1_RU.ipynb` | Main Russian notebook |
 | `GeoBIM_Mentor_v0_1_EN.ipynb` | English notebook
 | `geobim_artifact_loader_v0_1.py` | Standalone loader for the saved Chroma index
