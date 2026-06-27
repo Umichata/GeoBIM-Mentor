@@ -52,14 +52,8 @@ GeoBIM Mentor предназначен для консультаций по ин
 ## Архитектура
 
 <p align="center">
-  <img src="assets/geobim_architecture_v0_1_ru.png" alt="Архитектура GeoBIM Mentor v0.1" width="900">
+  <img src="docs/images/geobim_architecture_v0_1_ru.png" alt="Архитектура GeoBIM Mentor v0.1" width="900">
 </p>
-
-Если в репозитории используется только английская схема, замените путь на:
-
-```text
-assets/geobim_architecture_v0_1_en.png
-```
 
 Архитектура состоит из нескольких уровней:
 
@@ -390,7 +384,7 @@ The project is implemented as a Jupyter / Google Colab notebook so it can be stu
 ## Architecture
 
 <p align="center">
-  <img src="assets/geobim_architecture_v0_1_en.png" alt="GeoBIM Mentor v0.1 architecture" width="900">
+  <img src="docs/images/geobim_architecture_v0_1_en.png" alt="GeoBIM Mentor v0.1 architecture" width="900">
 </p>
 
 The architecture consists of several layers:
