@@ -1,0 +1,24 @@
+{
+  "project": "GeoBIM Mentor",
+  "version": "v0_1",
+  "generated_at_utc": "2026-06-04T08:17:59Z",
+  "files": {
+    "internal_cases_zip": "geobim_internal_cases_v0_1.zip",
+    "prompt_pack_zip": "geobim_prompt_pack_v0_1.zip",
+    "tests_zip": "geobim_tests_v0_1.zip",
+    "sources_catalog_csv": "sources_catalog_v0_1_geobim_mentor.csv",
+    "bundle_zip": "geobim_kb_bundle_v0_1.zip"
+  },
+  "counts": {
+    "internal_cases": 26,
+    "sources_catalog_rows": 77,
+    "hallucination_tests": 16,
+    "safety_tests": 13
+  },
+  "api_keys_required_at_runtime": [
+    "HF_TOKEN",
+    "OPENAI_API_KEY",
+    "DGIS_API_KEY"
+  ],
+  "api_keys_stored_in_files": false
+}

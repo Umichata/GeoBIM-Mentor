@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Secrets
+.env
+*.env
+*.key
+*.pem
+*.token
+secrets.json
+
+# Local runtime data
+cache/
+traces/
+models/
+downloads/
+index_storage/
+chroma/
+artifacts/cache/
+artifacts/input/
+artifacts/exports/
+
+# Private source bundles
+GEOBIM.zip
+geobim_private_books_v0_1.zip
+geobim_mentor_runtime_v0_1_local_only.zip
+
+# OS files
+.DS_Store
+Thumbs.db
