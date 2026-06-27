@@ -30,7 +30,6 @@ GeoBIM Mentor - это исследовательский AI-проект для
 - [Проверки качества](#ru-tests)
 - [Ограничения версии 0.1](#ru-limitations)
 - [План развития](#ru-roadmap)
-- [Безопасность и приватность](#ru-security)
 - [Лицензирование](#ru-license)
 
 <a id="ru-purpose"></a>
@@ -91,20 +90,20 @@ assets/geobim_architecture_v0_1_en.png
 
 ## Файлы и архивы данных
 
-| Файл | Назначение | Публиковать |
+| Файл | Назначение |
 |---|---|---|
-| `GeoBIM_Mentor_v0_1.ipynb` | Основной русский notebook проекта | Да |
-| `GeoBIM_Mentor_v0_1_EN_Faithful_Final.ipynb` | Английская версия notebook | Да |
-| `geobim_artifact_loader_v0_1.py` | Автономный загрузчик готового Chroma-индекса | Да |
-| `geobim_internal_cases_v0_1.zip` | Внутренние учебные кейсы по CAD/BIM/GIS | Да, если права позволяют |
-| `geobim_tests_v0_1.zip` | Тесты безопасности, маршрутизации, 2GIS и галлюцинаций | Да |
-| `geobim_lexicons_v0_1.zip` | Словари терминов, программ, ограничений и safety-правил | Да |
-| `program_aliases_v0_1.json` | Реестр программ, aliases, domain terms и weak terms | Да |
-| `sources_catalog_v0_1_geobim_mentor.csv` | Каталог открытых и внутренних источников | Да |
-| `manifest_v0_1.json` | Манифест исходного комплекта данных | Да |
-| `GEOBIM.zip` | Приватные книги и каталог книг | Нет |
-| `geobim_mentor_runtime_v0_1_public.zip` | Готовый публичный индекс без приватных книг | Можно |
-| `geobim_mentor_runtime_v0_1_local_only.zip` | Готовый индекс с производными приватных фрагментов | Нет |
+| `GeoBIM_Mentor_v0_1_RU.ipynb` | Основной русский notebook проекта |
+| `GeoBIM_Mentor_v0_1_EN.ipynb` | Английская версия notebook | 
+| `geobim_artifact_loader_v0_1.py` | Автономный загрузчик готового Chroma-индекса | 
+| `geobim_internal_cases_v0_1.zip` | Внутренние учебные кейсы по CAD/BIM/GIS | 
+| `geobim_tests_v0_1.zip` | Тесты безопасности, маршрутизации, 2GIS и галлюцинаций |
+| `geobim_lexicons_v0_1.zip` | Словари терминов, программ, ограничений и safety-правил |
+| `program_aliases_v0_1.json` | Реестр программ, aliases, domain terms и weak terms |
+| `sources_catalog_v0_1_geobim_mentor.csv` | Каталог открытых и внутренних источников |
+| `manifest_v0_1.json` | Манифест исходного комплекта данных |
+| `GEOBIM.zip` | Приватные книги и каталог книг |
+| `geobim_mentor_runtime_v0_1_public.zip` | Готовый публичный индекс без приватных книг |
+| `geobim_mentor_runtime_v0_1_local_only.zip` | Готовый индекс с производными приватных фрагментов |
 
 <a id="ru-private-books"></a>
 
@@ -137,8 +136,8 @@ cd <your-repo>
 Откройте один из файлов:
 
 ```text
-GeoBIM_Mentor_v0_1.ipynb
-GeoBIM_Mentor_v0_1_EN_Faithful_Final.ipynb
+GeoBIM_Mentor_v0_1_RU.ipynb
+GeoBIM_Mentor_v0_1_EN.ipynb
 ```
 
 Рекомендуемая среда для полного построения индекса - Google Colab с GPU.
@@ -331,39 +330,6 @@ Standalone-loader открывает только retrieval-слой. Полны
 9. Добавить API и веб-интерфейс.
 10. Усилить защиту от многошаговых атак, prompt injection и утечки секретов.
 
-<a id="ru-security"></a>
-
-## Безопасность и приватность
-
-Проект не должен публиковать:
-
-- `.env`;
-- API-ключи;
-- Hugging Face tokens;
-- OpenAI keys;
-- 2GIS keys;
-- приватные PDF;
-- `GEOBIM.zip`;
-- `local_only` runtime-артефакты;
-- Phoenix traces с чувствительными данными;
-- кэш внешних API, если в нем есть приватные запросы.
-
-Рекомендуется добавить в `.gitignore`:
-
-```gitignore
-.env
-*.env
-GEOBIM.zip
-geobim_mentor_runtime_v0_1_local_only.zip
-artifacts/
-cache/
-traces/
-index_storage/
-chroma/
-__pycache__/
-.ipynb_checkpoints/
-```
-
 <a id="ru-license"></a>
 
 ## Лицензирование
@@ -401,7 +367,6 @@ __pycache__/
 - [Quality checks](#en-tests)
 - [Version 0.1 limitations](#en-limitations)
 - [Roadmap](#en-roadmap)
-- [Security and privacy](#en-security)
 - [Licensing](#en-license)
 
 <a id="en-purpose"></a>
@@ -457,20 +422,20 @@ The architecture consists of several layers:
 
 ## Files and data archives
 
-| File | Purpose | Publish |
+| File | Purpose |
 |---|---|---|
-| `GeoBIM_Mentor_v0_1.ipynb` | Main Russian notebook | Yes |
-| `GeoBIM_Mentor_v0_1_EN_Faithful_Final.ipynb` | English notebook | Yes |
-| `geobim_artifact_loader_v0_1.py` | Standalone loader for the saved Chroma index | Yes |
-| `geobim_internal_cases_v0_1.zip` | Internal educational cases for CAD/BIM/GIS | Yes, if rights allow |
-| `geobim_tests_v0_1.zip` | Safety, routing, 2GIS, and hallucination tests | Yes |
-| `geobim_lexicons_v0_1.zip` | Term, program, constraint, and safety lexicons | Yes |
-| `program_aliases_v0_1.json` | Program registry with aliases, domain terms, and weak terms | Yes |
-| `sources_catalog_v0_1_geobim_mentor.csv` | Catalog of open and internal sources | Yes |
-| `manifest_v0_1.json` | Manifest for the seed data pack | Yes |
-| `GEOBIM.zip` | Private books and book catalog | No |
-| `geobim_mentor_runtime_v0_1_public.zip` | Ready public index without private books | Yes |
-| `geobim_mentor_runtime_v0_1_local_only.zip` | Ready index with private-derived fragments | No |
+| `GeoBIM_Mentor_v0_1_RU.ipynb` | Main Russian notebook |
+| `GeoBIM_Mentor_v0_1_EN.ipynb` | English notebook
+| `geobim_artifact_loader_v0_1.py` | Standalone loader for the saved Chroma index
+| `geobim_internal_cases_v0_1.zip` | Internal educational cases for CAD/BIM/GIS |
+| `geobim_tests_v0_1.zip` | Safety, routing, 2GIS, and hallucination tests |
+| `geobim_lexicons_v0_1.zip` | Term, program, constraint, and safety lexicons |
+| `program_aliases_v0_1.json` | Program registry with aliases, domain terms, and weak terms |
+| `sources_catalog_v0_1_geobim_mentor.csv` | Catalog of open and internal sources |
+| `manifest_v0_1.json` | Manifest for the seed data pack |
+| `GEOBIM.zip` | Private books and book catalog |
+| `geobim_mentor_runtime_v0_1_public.zip` | Ready public index without private books |
+| `geobim_mentor_runtime_v0_1_local_only.zip` | Ready index with private-derived fragments |
 
 <a id="en-private-books"></a>
 
@@ -503,8 +468,8 @@ cd <your-repo>
 Open one of the notebooks:
 
 ```text
-GeoBIM_Mentor_v0_1.ipynb
-GeoBIM_Mentor_v0_1_EN_Faithful_Final.ipynb
+GeoBIM_Mentor_v0_1_RU.ipynb
+GeoBIM_Mentor_v0_1_EN.ipynb
 ```
 
 Google Colab with a GPU is recommended for a full index build.
@@ -696,39 +661,6 @@ Priority improvements:
 8. Move the code from the notebook into a Python package.
 9. Add an API and web interface.
 10. Strengthen protection against multi-step attacks, prompt injection, and secret leakage.
-
-<a id="en-security"></a>
-
-## Security and privacy
-
-Do not publish:
-
-- `.env` files;
-- API keys;
-- Hugging Face tokens;
-- OpenAI keys;
-- 2GIS keys;
-- private PDFs;
-- `GEOBIM.zip`;
-- `local_only` runtime artifacts;
-- Phoenix traces with sensitive data;
-- external API cache files that contain private queries.
-
-Recommended `.gitignore` entries:
-
-```gitignore
-.env
-*.env
-GEOBIM.zip
-geobim_mentor_runtime_v0_1_local_only.zip
-artifacts/
-cache/
-traces/
-index_storage/
-chroma/
-__pycache__/
-.ipynb_checkpoints/
-```
 
 <a id="en-license"></a>
 
